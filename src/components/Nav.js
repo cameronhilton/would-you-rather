@@ -7,7 +7,7 @@ export default function Nav () {
       <ul>
         <li>
           <NavLink to='/' exact activeClassName='active'>
-            Home
+            Questions
           </NavLink>
         </li>
         <li>
@@ -21,7 +21,7 @@ export default function Nav () {
           </NavLink>
         </li>
         <li>
-          <NavLink to='/' activeClassName='active'>
+          <NavLink to='/Login' activeClassName='active'>
             Logout
           </NavLink>
         </li>
