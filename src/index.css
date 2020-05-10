@@ -73,3 +73,12 @@ li {
   padding: 10px;
   text-decoration: none;
 }
+
+.avatar {
+  width: 24px;
+  height: 24px;
+}
+
+.menu-item {
+  padding-left: 10px;
+}

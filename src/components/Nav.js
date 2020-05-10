@@ -1,7 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { connect } from 'react-redux'
 
-export default function Nav () {
+function Nav (props) {
+  const { user } = props
+
   return (
     <nav className='nav'>
       <ul>
@@ -20,6 +23,14 @@ export default function Nav () {
             Leaderboard
           </NavLink>
         </li>
+        {user && <span>
+            Hello, {user.name}
+            <img
+              src={user.avatarURL}
+              alt={user.name}
+              className='avatar'
+            />
+          </span>}
         <li>
           <NavLink to='/Login' activeClassName='active'>
             Logout
@@ -29,3 +40,13 @@ export default function Nav () {
     </nav>
   )
 }
+
+function mapStateToProps({ authedUser, users }) {
+  const user = authedUser && users[authedUser]
+
+  return {
+    user,
+  }
+}
+
+export default connect(mapStateToProps)(Nav)

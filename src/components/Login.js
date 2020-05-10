@@ -27,7 +27,14 @@ class Login extends Component {
 
     const { users } = this.props
     const options = Object.keys(users).map((user) => ({
-      label: users[user].name,
+      label: <span>
+                <img
+                  className='avatar'
+                  src={users[user].avatarURL}
+                  alt={users[user].name}
+                />
+                <span className='menu-item'>{users[user].name}</span>
+              </span>,
       value: users[user].id,
     }))
 
