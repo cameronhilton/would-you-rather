@@ -47,6 +47,7 @@ body {
 
 .center {
   text-align: center;
+  margin: auto;
 }
 
 .active {
@@ -64,6 +65,12 @@ body {
   padding-left: 0;
 }
 
+.login-select {
+  max-width: 500px;
+  padding: 10px;
+  text-align: left;
+}
+
 ul {
   padding-left: 0;
 }
@@ -74,11 +81,78 @@ li {
   text-decoration: none;
 }
 
+button {
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.inline {
+  display: inline;
+}
+
+.border {
+  border: 1px solid #333333;
+}
+
+.border-left {
+  border-left: 1px solid #333333;
+  margin-left: -1px;
+}
+
 .avatar {
   width: 24px;
   height: 24px;
 }
 
+.avatar-large {
+  width: 72px;
+  height: 72px;
+  float: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .menu-item {
   padding-left: 10px;
+}
+
+.home-header, .home-content {
+  width: 600px;
+}
+
+.home-header div {
+  display: inline-block;
+  width: 50%;
+  cursor: pointer;
+}
+
+.home-header div:hover {
+  background-color: #aaaaaa;
+}
+
+.questions {
+  width: 80%;
+}
+
+.question-header {
+  background-color: #cccccc;
+  border-radius: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.question-content {
+  padding: 3px;
+  text-overflow: ellipsis;
+}
+
+.bold-title {
+  font-weight: bold;
+  padding: 3px;
 }

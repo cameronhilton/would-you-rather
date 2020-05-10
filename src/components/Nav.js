@@ -9,17 +9,17 @@ function Nav (props) {
     <nav className='nav'>
       <ul>
         <li>
-          <NavLink to='/' exact activeClassName='active'>
+          <NavLink to='/' exact className='nav-link' activeClassName='active'>
             Questions
           </NavLink>
         </li>
         <li>
-          <NavLink to='/new' activeClassName='active'>
+          <NavLink to='/new' className='nav-link' activeClassName='active'>
             New Question
           </NavLink>
         </li>
         <li>
-          <NavLink to='/leaderboard' activeClassName='active'>
+          <NavLink to='/leaderboard' className='nav-link' activeClassName='active'>
             Leaderboard
           </NavLink>
         </li>
@@ -32,7 +32,7 @@ function Nav (props) {
             />
           </span>}
         <li>
-          <NavLink to='/Login' activeClassName='active'>
+          <NavLink to='/Login' className='nav-link' activeClassName='active'>
             Logout
           </NavLink>
         </li>

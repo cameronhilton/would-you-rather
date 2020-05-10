@@ -45,6 +45,7 @@ class Login extends Component {
           options={options}
           onChange={this.handleChange}
           placeholder="Select a user"
+          className='center login-select'
         />
       </div>
     )
