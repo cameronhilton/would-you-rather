@@ -19,7 +19,7 @@ class Questions extends Component {
                     alt={user.name}
                     className='avatar-large inline'
                   />
-                  <div>
+                  <div className='align-left'>
                     <div className='bold-title'>
                       Would you rather
                     </div>

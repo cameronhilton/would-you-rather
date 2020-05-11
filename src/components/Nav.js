@@ -23,7 +23,7 @@ function Nav (props) {
             Leaderboard
           </NavLink>
         </li>
-        {user && <span>
+        {user && <span className='nav-name'>
             Hello, {user.name}
             <img
               src={user.avatarURL}

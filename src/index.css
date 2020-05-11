@@ -12,10 +12,6 @@ code {
     monospace;
 }
 
-body {
-  background-color: rgb(225, 238, 255);
-}
-
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -54,6 +50,14 @@ body {
   font-weight: bold;
 }
 
+.nav {
+  background-color: #dddddd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .nav ul {
   display: flex;
   flex-direction: row;
@@ -63,6 +67,37 @@ body {
 
 .nav li:first-child {
   padding-left: 0;
+}
+
+.nav li:last-child {
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.nav-link {
+  padding: 5px 5px 10px 5px;
+  text-decoration: none;
+  color: inherit;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: #ccccee;
+}
+
+.nav-link.active {
+  background-color: #9999ff;
+}
+
+.nav-name {
+  padding: 11px 34px 5px 5px;
+}
+
+.nav-name img {
+  position: absolute;
+  top: 34px;
 }
 
 .login-select {
@@ -81,14 +116,20 @@ li {
   text-decoration: none;
 }
 
-button {
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+  border: 1px solid #9999ff;
+  border-radius: 5px;
   padding: 5px;
   width: 100%;
-  cursor: pointer;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
-.nav-link {
-  text-decoration: none;
+button:hover {
+  background-color: #ccccee;
 }
 
 .inline {
@@ -97,11 +138,6 @@ button {
 
 .border {
   border: 1px solid #333333;
-}
-
-.border-left {
-  border-left: 1px solid #333333;
-  margin-left: -1px;
 }
 
 .avatar {
@@ -113,7 +149,7 @@ button {
   width: 72px;
   height: 72px;
   float: left;
-  padding-left: 20px;
+  padding-left: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -126,33 +162,64 @@ button {
   width: 600px;
 }
 
+.home-header {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
 .home-header div {
   display: inline-block;
   width: 50%;
   cursor: pointer;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #dddddd;
+}
+.home-header div:first-of-type {
+  border-top-left-radius: 5px;
+}
+
+.home-header div:last-of-type {
+  border-top-right-radius: 5px;
 }
 
 .home-header div:hover {
-  background-color: #aaaaaa;
+  background-color: #ccccee;
+}
+
+.home-content {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .questions {
   width: 80%;
+  padding: 5px 5px 10px 5px;
+  border-radius: 5px;
 }
 
 .question-header {
   background-color: #cccccc;
-  border-radius: 3px;
+  border-radius: 5px;
   padding-top: 8px;
   padding-bottom: 8px;
+  padding-left: 15px;
+  text-align: left;
 }
 
 .question-content {
-  padding: 3px;
+  padding: 5px;
+  margin-bottom: 5px;
   text-overflow: ellipsis;
 }
 
 .bold-title {
   font-weight: bold;
-  padding: 3px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.align-left {
+  text-align: left;
+  padding-left: 118px;
 }

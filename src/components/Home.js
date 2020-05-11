@@ -13,24 +13,28 @@ class Home extends Component {
   }
 
   render() {
+    const { showUnanswered } = this.state
+
     return (
       <div>
         <div className='center home-header border'>
           <div
             className='center'
+            style={ showUnanswered ? { backgroundColor: '#9999ff' } : {}}
             onClick={() => this.showUnanswered(true)}
           >
             Unanswered Questions
           </div>
           <div
-            className='center border-left'
+            className='center'
+            style={ showUnanswered ? {} : { backgroundColor: '#9999ff' }}
             onClick={() => this.showUnanswered(false)}
           >
             Answered Questions
           </div>
         </div>
         <div className='center home-content border'>
-          {this.state.showUnanswered
+          {showUnanswered
             ? <Questions unanswered={true}/>
             : <Questions unanswered={false}/>
           }
