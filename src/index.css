@@ -98,7 +98,7 @@ li {
 }
 
 button, input[type="submit"], input[type="reset"] {
-	background: none;
+	background-color: #ccccee;
 	color: inherit;
   border: 1px solid #9999ff;
   border-radius: 5px;
@@ -110,7 +110,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 button:hover {
-  background-color: #ccccee;
+  background-color: #9999ff;
 }
 
 .inline {
@@ -226,7 +226,7 @@ button:hover {
   border-top-right-radius: 5px;
   padding: 10px;
   font-weight: bold;
-  font-size: large;
+  font-size: larger;
   background-color: #dddddd;
 }
 
@@ -252,6 +252,14 @@ button:hover {
 
 .new-question-container .new-title {
   margin-top: 0px;
+}
+
+.new-question-container img {
+  margin: 106px auto;
+}
+
+.new-question-container .avatar-vote {
+  margin: 54px auto;
 }
 
 .new-title {
