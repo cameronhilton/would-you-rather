@@ -209,6 +209,7 @@ button:hover {
   padding: 10px;
   font-weight: bold;
   font-size: large;
+  background-color: #dddddd;
 }
 
 .new-question-container {
@@ -229,6 +230,10 @@ button:hover {
 
 .new-question-container button {
   text-align: center;
+}
+
+.new-question-container .new-title {
+  margin-top: 0px;
 }
 
 .new-title {
