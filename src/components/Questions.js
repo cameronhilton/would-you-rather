@@ -1,7 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 
 class Questions extends Component {
+  toQuestion = (e, id) => {
+    e.preventDefault()
+
+    this.props.history.push(`/question/${id}`)
+  }
+
   render() {
     const { questionsToShow, questions, users } = this.props
 
@@ -26,7 +33,7 @@ class Questions extends Component {
                     <div className='question-content'>
                       {questions[id].optionOne.text}...
                     </div>
-                    <button className='center'>
+                    <button className='center' onClick={(e) => this.toQuestion(e, id)}>
                       View Poll
                     </button>
                   </div>
@@ -49,4 +56,4 @@ function mapPropsToState({ authedUser, questions, users }, { unanswered }) {
   }
 }
 
-export default connect(mapPropsToState)(Questions)
+export default withRouter(connect(mapPropsToState)(Questions))
