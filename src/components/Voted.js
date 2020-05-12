@@ -1,11 +1,15 @@
 import React from 'react'
 
 function Voted(props) {
-  const { optText, totalVotes, votes } = props
+  const { myVote, optText, totalVotes, votes } = props
   const optPercent = 100 * votes.length / totalVotes
 
   return (
-    <div className='border' style={{backgroundColor: props.myVote === 1 ? '#eeeeff' : '#eeeeee'}}>
+    <div className='border ' style={{backgroundColor: myVote ? '#eeeeff' : '#eeeeee'}}>
+      {myVote &&
+        <div className='my-vote'>
+          <div>Your vote</div>
+        </div>}
       <div>
         {optText}?
       </div>

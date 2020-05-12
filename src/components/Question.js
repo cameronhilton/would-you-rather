@@ -34,8 +34,8 @@ class Question extends Component {
             ? <Vote question={question} id={match.params.id}/>
             : <div className='question-results bold'>
                 <div className='bold-title bolder'>Results:</div>
-                <Voted optText={question.optionOne.text} totalVotes={totalVotes} votes={question.optionOne.votes}/>
-                <Voted optText={question.optionTwo.text} totalVotes={totalVotes} votes={question.optionTwo.votes}/>
+                <Voted myVote={myVote === 1} optText={question.optionOne.text} totalVotes={totalVotes} votes={question.optionOne.votes}/>
+                <Voted myVote={myVote === 2} optText={question.optionTwo.text} totalVotes={totalVotes} votes={question.optionTwo.votes}/>
               </div>
           }
         </div>
