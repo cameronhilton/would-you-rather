@@ -18,29 +18,6 @@ code {
   padding: 10px;
 }
 
-.btn {
-  text-transform: uppercase;
-  margin: 35px auto;
-  padding: 10px;
-  border: 1px solid rgba(0,0,0,.29);
-  cursor: pointer;
-  background: #fff;
-  font-size: 16px;
-  width: 250px;
-  position: relative;
-}
-
-.btn:hover {
-  border-color: rgba(0,0,0,.5);
-  text-decoration: none;
-}
-
-.btn:focus {
-  outline: 0;
-  font-weight: 700;
-  border-width: 2px;
-}
-
 .center {
   text-align: center;
   margin: auto;
@@ -125,7 +102,7 @@ button, input[type="submit"], input[type="reset"] {
   width: 100%;
 	font: inherit;
 	cursor: pointer;
-	outline: inherit;
+  outline: inherit;
 }
 
 button:hover {
@@ -175,6 +152,7 @@ button:hover {
   padding-bottom: 8px;
   background-color: #dddddd;
 }
+
 .home-header div:first-of-type {
   border-top-left-radius: 5px;
 }
@@ -222,4 +200,44 @@ button:hover {
 .align-left {
   text-align: left;
   padding-left: 118px;
+}
+
+.new-quesion-header {
+  max-width: 500px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.new-question-container {
+  max-width: 500px;
+  padding: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.new-question-container * {
+  text-align: left;
+}
+
+.new-question-container textarea {
+  width: 100%;
+  max-width: 494px;
+}
+
+.new-question-container button {
+  text-align: center;
+}
+
+.new-title {
+  font-weight: bold;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.new-btn {
+  margin: 10px auto;
 }

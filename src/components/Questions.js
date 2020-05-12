@@ -42,7 +42,7 @@ class Questions extends Component {
 function mapPropsToState({ authedUser, questions, users }, { unanswered }) {
   return {
     questionsToShow: unanswered
-      ? Object.keys(questions).filter((question) => question.id in users[authedUser].answers)
+      ? Object.keys(questions).filter((question) => !(question in users[authedUser].answers))
       : Object.keys(users[authedUser].answers),
     questions,
     users,
