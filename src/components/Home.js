@@ -17,7 +17,7 @@ class Home extends Component {
 
     return (
       <div>
-        <div className='center home-header border'>
+        <div className='center home-header wide border'>
           <div
             className='center'
             style={ showUnanswered ? { backgroundColor: '#9999ff' } : {}}
@@ -33,7 +33,7 @@ class Home extends Component {
             Answered Questions
           </div>
         </div>
-        <div className='center home-content border'>
+        <div className='center home-content wide border'>
           {showUnanswered
             ? <Questions unanswered={true}/>
             : <Questions unanswered={false}/>

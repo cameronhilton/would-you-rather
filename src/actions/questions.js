@@ -37,7 +37,6 @@ export function handleAddQuestion(optionOneText, optionTwoText) {
         console.warn('Error in addQuestion: ', e)
         alert('There was an error adding the question. Try again.')
       })
-  
   }
 }
 

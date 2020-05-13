@@ -2,7 +2,7 @@ import React from 'react'
 
 function Voted(props) {
   const { myVote, optText, totalVotes, votes } = props
-  const optPercent = 100 * votes.length / totalVotes
+  const optPercent = Math.round(100 * votes.length / totalVotes)
 
   return (
     <div className='border ' style={{backgroundColor: myVote ? '#eeeeff' : '#eeeeee'}}>

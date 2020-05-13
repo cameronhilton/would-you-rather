@@ -152,8 +152,8 @@ button:hover {
   padding-left: 10px;
 }
 
-.home-header, .home-content {
-  width: 600px;
+.wide {
+  width: 500px;
 }
 
 .home-header {
@@ -303,4 +303,52 @@ button:hover {
 .my-vote div {
   margin-left: 12px;
   margin-top: 8px;
+}
+
+.leader-card {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  min-height: 94px;
+  text-align: left;
+}
+
+.leader-card > div {
+  padding-left: 20px;
+  min-height: 94px;
+}
+
+.pad-right-10 {
+  padding-right: 20px;
+}
+
+.leader-score-container {
+  margin-right: 10px;
+  line-height: 30px;
+}
+
+.leader-score {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #9999ff;
+  text-align: center;
+  line-height: 47px;
+}
+
+.right {
+  float: right;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
