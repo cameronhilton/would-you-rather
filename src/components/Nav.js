@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
 
 function Nav (props) {
-  const { user } = props
+  const { authedUser, user } = props
 
   return (
     <nav className='nav'>
@@ -33,7 +33,7 @@ function Nav (props) {
           </span>}
         <li>
           <NavLink to='/Login' className='nav-link' activeClassName='active'>
-            Logout
+            {authedUser === null ? 'Login' : 'Logout'}
           </NavLink>
         </li>
       </ul>
@@ -45,6 +45,7 @@ function mapStateToProps({ authedUser, users }) {
   const user = authedUser && users[authedUser]
 
   return {
+    authedUser,
     user,
   }
 }

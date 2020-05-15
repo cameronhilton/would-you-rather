@@ -1,5 +1,5 @@
 import React, {Component, Fragment } from 'react'
-import { BrowserRouter, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { handleInitialData } from '../actions/shared'
 import LoadingBar from 'react-redux-loading'
@@ -23,16 +23,16 @@ class App extends Component {
           <div className='container'>
             <Nav/>
             {this.props.loading === true
-              ? <div>
-                  <Redirect to='login'/>
+              ? <h3 className='center'>
+                  Please Login
                   <Route path='/login' component={Login}/>
-                </div>
+                </h3>
               : <div>
-                    <Route path='/' exact component={Home}/>
-                    <Route path='/new' component={NewQuestion}/>
-                    <Route path='/question/:id' component={Question}/>
-                    <Route path='/leaderboard' exact component={Leaderboard}/>
-                    <Route path='/login' component={Login}/>
+                  <Route path='/' exact component={Home}/>
+                  <Route path='/new' component={NewQuestion}/>
+                  <Route path='/question/:id' component={Question}/>
+                  <Route path='/leaderboard' exact component={Leaderboard}/>
+                  <Route path='/login' component={Login}/>
                 </div>}
           </div>
         </Fragment>

@@ -21,7 +21,7 @@ class Leaderboard extends Component {
       <ul className='center wide'>
         {sortedUsers.map((user) => {
           return (
-            <li id={user.id} className='leader-card border'>
+            <li key={user.id} className='leader-card border'>
               <img src={users[user.id].avatarURL} alt={users[user.id].name} className={'avatar-large'}/>
               <div className='flex-row'>
                 <div className='flex-col pad-right-10'>
