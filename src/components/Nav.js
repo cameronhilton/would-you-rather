@@ -32,9 +32,10 @@ function Nav (props) {
             />
           </span>}
         <li>
+        {authedUser !== null && 
           <NavLink to='/Login' className='nav-link' activeClassName='active'>
-            {authedUser === null ? 'Login' : 'Logout'}
-          </NavLink>
+            Logout
+          </NavLink>}
         </li>
       </ul>
     </nav>

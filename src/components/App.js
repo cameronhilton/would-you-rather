@@ -25,13 +25,13 @@ class App extends Component {
             {this.props.loading === true
               ? <h3 className='center'>
                   Please Login
-                  <Route path='/login' component={Login}/>
+                  <Route path='/*' component={Login}/>
                 </h3>
               : <div>
                   <Route path='/' exact component={Home}/>
                   <Route path='/add' component={AddQuestion}/>
                   <Route path='/question/:id' component={Question}/>
-                  <Route path='/leaderboard' exact component={Leaderboard}/>
+                  <Route path='/leaderboard' component={Leaderboard}/>
                   <Route path='/login' component={Login}/>
                 </div>}
           </div>
