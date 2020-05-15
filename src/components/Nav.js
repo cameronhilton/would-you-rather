@@ -14,7 +14,7 @@ function Nav (props) {
           </NavLink>
         </li>
         <li>
-          <NavLink to='/new' className='nav-link' activeClassName='active'>
+          <NavLink to='/add' className='nav-link' activeClassName='active'>
             New Question
           </NavLink>
         </li>

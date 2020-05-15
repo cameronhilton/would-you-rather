@@ -6,7 +6,7 @@ import LoadingBar from 'react-redux-loading'
 import Leaderboard from './Leaderboard'
 import Login from './Login'
 import Nav from './Nav'
-import NewQuestion from './NewQuestion'
+import AddQuestion from './AddQuestion'
 import Question from './Question'
 import Home from './Home'
 
@@ -29,7 +29,7 @@ class App extends Component {
                 </h3>
               : <div>
                   <Route path='/' exact component={Home}/>
-                  <Route path='/new' component={NewQuestion}/>
+                  <Route path='/add' component={AddQuestion}/>
                   <Route path='/question/:id' component={Question}/>
                   <Route path='/leaderboard' exact component={Leaderboard}/>
                   <Route path='/login' component={Login}/>
