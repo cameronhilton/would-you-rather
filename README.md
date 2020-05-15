@@ -1,3 +1,8 @@
+## Would You Rather
+
+React app that let's users create and answer polls for Would You Rather format questions.
+Users can log in, view questions, add polls and check the leaderboard.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
